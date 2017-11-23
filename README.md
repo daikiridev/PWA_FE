@@ -1249,7 +1249,7 @@ Different projects choose different testing tradeoffs based on how often compone
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from AppToto;
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -1290,7 +1290,7 @@ Now you can write a smoke test with it:
 ```js
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import App from AppToto;
 
 it('renders without crashing', () => {
   shallow(<App />);
@@ -1306,7 +1306,7 @@ Here is an example from Enzyme documentation that asserts specific output, rewri
 ```js
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import App from AppToto;
 
 it('renders welcome message', () => {
   const wrapper = shallow(<App />);
